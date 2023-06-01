@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //es5 방식의 function
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum(1,4));
+
+        //es6 방식의 function
+        // const sum=a,b=>a+b;//오류
+        const sum2=(a,b)=>a+b;//화살표 함수
+        console.log(sum2(1,4));
+
+        //입력 변수가 하나일 때 (()괄호 생략 가능)
+        // let sum3=a=>{return a+10}
+        let sum3=a=>a+10;//return, 중괄호 생략
+        console.log(sum3(3));
+        
+        let sum4=(a,b)=>{a+b}//undefined, return이 없어서 그럼
+        console.log(sum4(3,7));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
